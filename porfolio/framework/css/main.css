@@ -4,47 +4,52 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
+/*** All text to be enclosed in P tags ***/
 p {
   margin-top: 1px;
   margin-bottom: 1px;
   margin-right: 5px;
 }
 
-#name
+#name{font-size: 250%;text-align: right;}
+#title{font-size: 125%;text-align: right;}
+
+#hr{margin-top: 10px; margin-bottom: 10px;}
+
+#featured_work{font-size: 175%; text-align: left; margin-bottom: 10px;}
+
+div[id*="_img"]{text-align: center;} /* center all "_img" divs */
+#appify_title{font-size: 150%;text-align: center;}
+#sunflower_title{font-size: 150%;text-align: center;}
+#bokeh_title{font-size: 150%;text-align: center;}
+
+#appify_href{font-size: 100%;text-align: center;}
+#sunflower_href{font-size: 100%;text-align: center;}
+#bokeh_href{font-size: 100%;text-align: center;}
+/********* GRID BELOW HERE ****************/
+/* debug: show borders around cells*/
+/*
+[class*='row']{border: 1px solid red !important;}
+[class*='col-']{ border: 1px dashed blue !important;}
+*/
+.grid
 {
-  font-size: 250%;
-  text-align: right;
-
-}
-
-#title
-{
-  font-size: 125%;
-  text-align: right;
-}
-
-.grid {
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
 }
 
-.row {
+.row
+{
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     display: flex;
-    /* debug */
-
 }
-
-
-/* debug: show borders around cells*/
-[class*='row']{border: 1px solid red !important;}
-[class*='col-']{ border: 1px dashed blue !important;}
 
 .col-1  {width:   8.33%;}
 .col-2  {width:  16.66%;}
